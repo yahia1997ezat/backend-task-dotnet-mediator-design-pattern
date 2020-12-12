@@ -2,7 +2,7 @@ using System;
 
 namespace TaskApi.Domain
 {
-    enum Status
+   public  enum Status
     {
         Completed,
         Rejected,

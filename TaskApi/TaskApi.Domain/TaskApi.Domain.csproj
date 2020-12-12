@@ -10,7 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OrderApi.Domain\OrderApi.Domain.csproj" />
     <ProjectReference Include="..\TaskApi.Domain\TaskApi.Domain.csproj" />
   </ItemGroup>
 
