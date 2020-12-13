@@ -18,7 +18,7 @@ namespace TaskApi.Service.v1.Query
 
         public async Task<List<TaskItem>> Handle(GetTaskItemByUserGuidQuery request, CancellationToken cancellationToken)
         {
-            return await _taskItemRepository.GetTaskItemByUserGuidAsync(request.AssignedToUser, cancellationToken);
+            return await _taskItemRepository.GetTaskItemByUserAsync(request.AssignedToUser, cancellationToken);
         }
     }
 }

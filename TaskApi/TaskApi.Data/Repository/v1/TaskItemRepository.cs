@@ -30,14 +30,15 @@ namespace TaskApi.Data.Repository.v1
             return await TaskItemContext.TaskItem.FirstOrDefaultAsync(x => x.Id == orderId, cancellationToken);
         }
 
-        public async Task<List<TaskItem>> GetTaskItemByUserGuidAsync(Guid assignedToUser, CancellationToken cancellationToken)
+        public Task<List<TaskItem>> GetTaskItemByUserAsync(Guid assignedToUser, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<List<TaskItem>> GetTaskItemByUserAsync(string assignedToUser, CancellationToken cancellationToken)
         {
             return await TaskItemContext.TaskItem.Where(x => x.AssignedToUser == assignedToUser).ToListAsync( cancellationToken);
         }
 
-        public async Task<List<TaskItem>> GetOrderByCustomerGuidAsync(Guid customerId, CancellationToken cancellationToken)
-        {
-            return await TaskItemContext.TaskItem.Where(x => x.AssignedToUser == customerId).ToListAsync(cancellationToken);
-        }
     }
 }

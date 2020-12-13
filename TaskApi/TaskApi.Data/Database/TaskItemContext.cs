@@ -24,7 +24,7 @@ namespace TaskApi.Data.Database
                     CompletedOn=new DateTime(2020,12,13),
                     RejectedOn= null,
                     RejectedReason= null,
-                    AssignedToUser= Guid.Parse("58e5cd7d-856b-4224-bdff-bd8f85bf5a1d"),
+                    AssignedToUser= "Yahia",
                     Status = Status.Completed
                 },
                 new TaskItem
@@ -36,7 +36,7 @@ namespace TaskApi.Data.Database
                     CompletedOn= null,
                     RejectedOn= null,
                     RejectedReason= null,
-                    AssignedToUser= Guid.Parse("58e5cd7d-856b-4224-bdff-bd8f85bf5a5d"),
+                    AssignedToUser= "Yahia",
                 },
                 new TaskItem
                 {
@@ -47,7 +47,7 @@ namespace TaskApi.Data.Database
                     CompletedOn= null,
                     RejectedOn= null,
                     RejectedReason= null,
-                    AssignedToUser= Guid.Parse("58e5cd7d-856b-4224-bdff-bd8f85bf5a5d"),
+                    AssignedToUser= "Yahia",
                 }
             };
 

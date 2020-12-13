@@ -12,7 +12,7 @@ namespace TaskApi.Data.Repository.v1
         Task<List<TaskItem>> GetAllTasksAsync(CancellationToken cancellationToken);
 
         Task<TaskItem> GetTaskItemByIdAsync(Guid orderId, CancellationToken cancellationToken);
-        Task<List<TaskItem>> GetTaskItemByUserGuidAsync(Guid assignedToUser, CancellationToken cancellationToken);
+        Task<List<TaskItem>> GetTaskItemByUserAsync(Guid assignedToUser, CancellationToken cancellationToken);
 
     }
 }
